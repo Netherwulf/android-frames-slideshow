@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PAM_2</string>
+    <string name="button_resume">Play</string>
+    <string name="button_activity2">Next</string>
+    <string name="button_pause">Pause</string>
+</resources>

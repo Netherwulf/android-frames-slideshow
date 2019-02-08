@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:layout="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:onClick="pause"
+        android:text="Pause"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/videoView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:onClick="resume"
+        android:text="Play"
+        app:layout_constraintBottom_toTopOf="@+id/buttonActivity2"
+        app:layout_constraintLeft_toRightOf="@+id/videoView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPause"/>
+
+    <Button
+        android:id="@+id/buttonActivity2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:onClick="activity2"
+        android:text="Next"
+        app:layout_constraintLeft_toRightOf="@+id/videoView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
